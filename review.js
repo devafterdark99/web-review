@@ -303,7 +303,7 @@ async function showEnding() {
     <h1 class="ending-line">THE END.</h1>
   `;
 
-  await wait(4500);
+  await wait(4000);
 
   content.innerHTML = `
     <h1 class="ending-line">Thanks for coming<br>till the end.</h1>
