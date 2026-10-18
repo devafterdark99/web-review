@@ -1,0 +1,213 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#210d17">
+
+  <title>The Final Chapter | Friendship Archive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="review.css">
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="review-loader" class="review-loader">
+    <div class="loader-orbit"></div>
+    <div class="loader-inner">
+      <span class="loader-star">✳</span>
+      <p class="loader-label">THE FRIENDSHIP ARCHIVE</p>
+      <h1>One last thing...</h1>
+      <p id="loader-message">Preparing your final assignment.</p>
+      <div class="loader-track">
+        <div id="loader-progress"></div>
+      </div>
+      <span class="loader-footnote">PLEASE DO NOT ESCAPE JUST YET</span>
+    </div>
+  </div>
+
+  <!-- FINAL ENDING -->
+  <div id="ending-screen" class="ending-screen" aria-live="polite">
+    <div id="ending-content" class="ending-content"></div>
+  </div>
+
+  <header class="review-topbar">
+    <a href="complaint.html">← Complaint Registry</a>
+    <span>FINAL FILE · 013</span>
+  </header>
+
+  <main id="review-page" class="review-page">
+
+    <section class="review-hero">
+      <span class="hero-label">THE LAST PAGE OF THIS NONSENSE</span>
+
+      <div class="hero-flower">✳</div>
+
+      <h1>Before you go,<br>
+        <span>one tiny review?</span>
+      </h1>
+
+      <p class="hero-description">
+        Itni saari bakchodi explore kar li tune.
+        Ab bata, madam — birthday website aur gifts ka experience
+        kaisa raha?
+      </p>
+
+      <div class="hero-note">Honest reviews only. Fake appreciation is a crime. ♡</div>
+    </section>
+
+    <form id="review-form" class="review-form">
+
+      <div class="form-topline">
+        <span>THE REVIEW ROOM</span>
+        <span>FINAL SUBMISSION</span>
+      </div>
+
+      <section class="review-field">
+        <span class="field-number">01 / OVERALL EXPERIENCE</span>
+        <h2>So... kaisa laga sab kuch?</h2>
+        <p class="field-hint">Stars de de. Judge karne ka poora haq hai.</p>
+
+        <div class="rating-group" role="group" aria-label="Overall experience rating">
+          <input type="radio" name="overall" id="overall-1" value="1" required>
+          <label for="overall-1" aria-label="1 star">★</label>
+          <input type="radio" name="overall" id="overall-2" value="2">
+          <label for="overall-2" aria-label="2 stars">★</label>
+          <input type="radio" name="overall" id="overall-3" value="3">
+          <label for="overall-3" aria-label="3 stars">★</label>
+          <input type="radio" name="overall" id="overall-4" value="4">
+          <label for="overall-4" aria-label="4 stars">★</label>
+          <input type="radio" name="overall" id="overall-5" value="5">
+          <label for="overall-5" aria-label="5 stars">★</label>
+        </div>
+        <p id="rating-label" class="rating-label">Select your rating, inspector.</p>
+      </section>
+
+      <section class="review-field">
+        <label for="favourite">
+          <span class="field-number">02 / THE GOOD STUFF</span>
+          <span class="field-title">Favourite part of the website?</span>
+        </label>
+        <p class="field-hint">
+          Koi page, animation, joke ya moment jo genuinely pasand aaya.
+        </p>
+        <textarea id="favourite" name="favourite" maxlength="3000"
+          placeholder="Okay, I'll admit... this part was actually nice..."
+          required></textarea>
+      </section>
+
+      <section class="review-field">
+        <label for="gifts">
+          <span class="field-number">03 / GIFT REVIEW</span>
+          <span class="field-title">Gifts ka kya verdict hai?</span>
+        </label>
+        <p class="field-hint">
+          Diary, guitar wala teddy, website — sab par honest feedback.
+        </p>
+        <textarea id="gifts" name="gifts" maxlength="3000"
+          placeholder="The teddy deserves a separate review, honestly..."
+          required></textarea>
+      </section>
+
+      <section class="review-field">
+        <label for="funniest">
+          <span class="field-number">04 / MOST UNHINGED MOMENT</span>
+          <span class="field-title">Sabse funny ya irritating part?</span>
+        </label>
+        <textarea id="funniest" name="funniest" maxlength="3000"
+          placeholder="The part where I wanted to close the tab was..."
+          required></textarea>
+      </section>
+
+      <section class="review-field">
+        <label for="improve">
+          <span class="field-number">05 / CONSTRUCTIVE CRITICISM</span>
+          <span class="field-title">Kya better ho sakta tha?</span>
+        </label>
+        <p class="field-hint">
+          Design, content, gifts, jokes — jo mann ho bol.
+        </p>
+        <textarea id="improve" name="improve" maxlength="3000"
+          placeholder="Don't worry, my ego has been temporarily disabled..."
+          required></textarea>
+      </section>
+
+      <section class="review-field">
+        <label for="message">
+          <span class="field-number">06 / LAST WORDS</span>
+          <span class="field-title">Kuch aur kehna hai?</span>
+        </label>
+        <textarea id="message" name="message" maxlength="4000"
+          placeholder="Compliments, complaints, emotional damage... anything."
+          required></textarea>
+      </section>
+
+      <div class="review-promise">
+        <span class="promise-heart">♡</span>
+        <p>
+          <strong>Jokes apart.</strong><br>
+          I actually put a lot of thought into this.
+          Honest feedback matters more than a five-star rating.
+        </p>
+      </div>
+
+
+      <button type="submit" id="submit-review" class="submit-review">
+        SUBMIT YOUR REVIEW ↗
+      </button>
+
+      <p id="review-status" class="review-status" aria-live="polite">
+        One final task. You're almost free.
+      </p>
+
+    </form>
+
+    <footer class="review-footer">
+      <p>MADE WITH QUESTIONABLE LEVELS OF EFFORT</p>
+      <p>13 · 11 · 26 &nbsp; ♡</p>
+    </footer>
+
+  </main>
+
+  <!-- PDF LIBRARY WITH FALLBACK -->
+  <script>
+    window.jsPDFReady = new Promise((resolve, reject) => {
+      const cdns = [
+        "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js",
+        "https://unpkg.com/jspdf@2.5.2/dist/jspdf.umd.min.js"
+      ];
+
+      let index = 0;
+
+      function loadNext() {
+        if (index >= cdns.length) {
+          reject(new Error("Could not load jsPDF."));
+          return;
+        }
+
+        const script = document.createElement("script");
+        script.src = cdns[index++];
+        script.onload = () => {
+          if (window.jspdf?.jsPDF) {
+            resolve(window.jspdf.jsPDF);
+          } else {
+            loadNext();
+          }
+        };
+        script.onerror = loadNext;
+        document.head.appendChild(script);
+      }
+
+      loadNext();
+    });
+  </script>
+
+  <script src="review.js" defer></script>
+</body>
+</html>
